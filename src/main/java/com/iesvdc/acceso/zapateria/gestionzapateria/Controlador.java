@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author profesor
+ * @author matinal
  */
 
 @RestController
@@ -34,7 +34,7 @@ public class Controlador {
 
    // Get All Clientes
     @GetMapping("/clientes")
-    public List<Cliente> getAllAlumnos() {
+    public List<Cliente> getAllClientes() {
         return repoClient.findAll();
     }
     
