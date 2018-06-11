@@ -1,4 +1,3 @@
-
 DROP TABLE IF EXISTS cliente_direccion;
 DROP TABLE IF EXISTS cliente;
 DROP TABLE IF EXISTS cod_pos;
@@ -42,7 +41,7 @@ CREATE TABLE cliente_direccion (
 
 INSERT INTO `cliente` (`id`, `nombre`, `apellidos`, `dni`) VALUES
 (1, 'Pepe', 'Perez Martinez', 12345678),
-(2, 'Miguel Angel', 'Gutierrez Garcia', 87654321)
+(2, 'Miguel Angel', 'Gutierrez Garcia', 87654321),
 (3, 'Juan', 'Sin Miedo', 11223344);
 
 INSERT INTO `cod_pos` (`cp`, `localidad`) VALUES
@@ -54,5 +53,4 @@ INSERT INTO `cliente_direccion` (`nombre`, `id_direccion`, `id_cliente`, `nombre
 ('Mi casa', 1, 1, 'Paseo de la Estación 44', 23008),
 ('Casa', 2, 2, 'Rue del Percebe 13', 23005),
 ('Playa', 3, 2, 'Rue del Percebe 13', 29000),
-('Oficina', 1, 3, 'Avenida de Andalucia S/N', 29000);
-
+('Oficina', 4, 3, 'Avenida de Andalucia S/N', 29000);

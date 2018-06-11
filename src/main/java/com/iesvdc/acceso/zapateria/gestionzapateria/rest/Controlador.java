@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.iesvdc.acceso.zapateria.gestionzapateria;
+package com.iesvdc.acceso.zapateria.gestionzapateria.rest;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.iesvdc.acceso.zapateria.gestionzapateria.entities.Cliente;
+import com.iesvdc.acceso.zapateria.gestionzapateria.entities.ClienteDireccion;
+import com.iesvdc.acceso.zapateria.gestionzapateria.entities.CodPos;
+import com.iesvdc.acceso.zapateria.gestionzapateria.repositories.RepositorioClientes;
+import com.iesvdc.acceso.zapateria.gestionzapateria.repositories.RepositorioCodPos;
+import com.iesvdc.acceso.zapateria.gestionzapateria.repositories.RepositorioDireccion;
 
 /**
  *

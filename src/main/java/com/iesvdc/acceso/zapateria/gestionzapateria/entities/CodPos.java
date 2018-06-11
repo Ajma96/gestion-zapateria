@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.iesvdc.acceso.zapateria.gestionzapateria;
+package com.iesvdc.acceso.zapateria.gestionzapateria.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.io.Serializable;
 import java.util.List;
+
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 /**
  *
@@ -27,10 +27,6 @@ import javax.xml.bind.annotation.XmlTransient;
 @Entity
 @XmlRootElement
 @Table(name = "CodPos")
-@NamedQueries({
-    @NamedQuery(name = "CodPos.findAll", query = "SELECT c FROM CodPos c")
-    , @NamedQuery(name = "CodPos.findByCp", query = "SELECT c FROM CodPos c WHERE c.cp = :cp")
-    , @NamedQuery(name = "CodPos.findByLocalidad", query = "SELECT c FROM CodPos c WHERE c.localidad = :localidad")})
 public class CodPos implements Serializable {
 
     private static final long serialVersionUID = 1L;
