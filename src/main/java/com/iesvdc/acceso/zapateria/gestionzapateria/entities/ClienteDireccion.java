@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.iesvdc.acceso.zapateria.gestionzapateria;
+package com.iesvdc.acceso.zapateria.gestionzapateria.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.io.Serializable;
+
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,11 +15,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 /**
  *
@@ -29,11 +28,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Entity
 @Table(name = "cliente_direccion")
 @XmlRootElement
-@NamedQueries({
-    @NamedQuery(name = "ClienteDireccion.findAll", query = "SELECT c FROM ClienteDireccion c")
-    , @NamedQuery(name = "ClienteDireccion.findByNombre", query = "SELECT c FROM ClienteDireccion c WHERE c.nombre = :nombre")
-    , @NamedQuery(name = "ClienteDireccion.findByIdDireccion", query = "SELECT c FROM ClienteDireccion c WHERE c.idDireccion = :idDireccion")
-    , @NamedQuery(name = "ClienteDireccion.findByNombreVia", query = "SELECT c FROM ClienteDireccion c WHERE c.nombreVia = :nombreVia")})
 public class ClienteDireccion implements Serializable {
 
     private static final long serialVersionUID = 1L;
